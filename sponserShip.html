@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            border: 10px solid white;
+            box-shadow: 0 7px 9px rgba(0, 0, 0, 1);
+            padding: 0 30px 30px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(0, 255, 0, 0.5);
+        }
+        h1 {
+            margin: 20px 0;
+        }
+        input {
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 15px;
+            border: none;
+            background-color: aliceblue;
+        }
+        label {
+            font-size: 20px;
+        }
+        select {
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 15px;
+        }
+        button {
+            padding: 15px;
+            border-radius: 50px;
+            border: none;
+            margin: 20px auto;
+            background-color: #006400;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>SPONSERSHIP FORM</h1>
+        <label for="">Name:</label>
+        <input type="text" name="" id="name"><br><br>
+        <label for="">F.Name:</label>
+        <input type="text" name="" id="fname"><br><br>
+        <label for="">CNIC:</label>
+        <input type="number" name="" id="cnic"><br><br>
+        <label for="">Phone.no:</label>
+        <input type="number" name="" id="phone"><br><br>
+        <label for="">Sponser For:</label>
+        <select name="" id="">
+            <option value="">Donation For Food</option>
+            <option value="">Donation For Education</option>
+            <option value="">Donation For Medical</option>
+        </select>
+        <button><a href="./index.html">SUBMIT</a></button>
+    </form>
+
+    <script>
+        const btn = document.querySelector("button");
+
+        btn.addEventListener("click", () => {
+            alert("YOU ARE NOW SPONSER OF SAYLANI")
+            
+        })
+    </script>
+</body>
+</html>
